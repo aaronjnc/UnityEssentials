@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class EnemySize : MonoBehaviour
 {
+    [Tooltip("Enemy Transform component")]
     private Transform enemyTransform;
     [Header("Size Information")]
-    [Range(0, 10)]
+    [Tooltip("Max size of enemy"), Range(0, 10)]
     public float maxSize = 3;
     [HideInInspector] public float waitSeconds = 5;
     private void Start()

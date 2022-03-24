@@ -13,7 +13,7 @@ public class SpriteProcessor : AssetPostprocessor
     }
     void OnPreprocessAsset()
     {
-        TextureImporter importer = assetImporter as TextureImporter;
+        ModelImporter importer = assetImporter as ModelImporter;
         if (importer != null)
         {
             //texture stuff

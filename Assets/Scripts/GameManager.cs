@@ -36,6 +36,10 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Application.quitting += () => applicationQuitting = true;
+        if (Instance != this)
+        {
+            Destroy(this);
+        }
         _instance = this;
         DontDestroyOnLoad(gameObject);
     }
